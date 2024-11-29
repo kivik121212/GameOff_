@@ -8,7 +8,6 @@ public class StartKatscen : MonoBehaviour
     public string scenename;
     public float start_time;
     public AudioSource zvuk;
-    public AudioSource zvuk2;
 
     void Start()
     {
@@ -30,12 +29,5 @@ public class StartKatscen : MonoBehaviour
             zvuk.Play();
         }
 
-        StartCoroutine(smeh());
-        IEnumerator smeh()
-        {
-            yield return new WaitForSeconds(22.88f);
-            zvuk2.Play();
-
-        }
     }
 }
